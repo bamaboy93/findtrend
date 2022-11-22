@@ -1,0 +1,22 @@
+.section {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  text-align: center;
+}
+
+.section__link {
+  margin-top: 80px;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  background: $third-bg-color;
+  color: $title-text-color;
+
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
+}

@@ -1,0 +1,63 @@
+body {
+  background-color: $bg-color;
+  color: $primary-text-color;
+  font-family: $primary-font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 0px 20px;
+
+  //   @media screen and (min-width: 480px) {
+  //     width: 480px;
+  //   }
+
+  //   @media screen and (min-width: 768px) {
+  //     width: 768px;
+  //   }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+.bg-green {
+  background-color: $accent-color;
+}
+
+.bg-grey {
+  background-color: $forth-bg-color;
+}
+.bg-black {
+  background-color: $third-bg-color;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}

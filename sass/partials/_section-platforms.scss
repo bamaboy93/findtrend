@@ -1,0 +1,34 @@
+.section-platforms {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  text-align: center;
+}
+.section-platforms__title {
+  margin-bottom: 80px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.2;
+}
+.section-platforms__list {
+  margin-bottom: 80px;
+
+  display: flex;
+  justify-content: center;
+}
+.section-platforms__item:not(:last-child) {
+  margin-right: 24px;
+}
+.section-platforms__link {
+  display: inline-block;
+  padding: 32px;
+  border-radius: 8px;
+  background: $bg-color;
+
+  &:focus,
+  &:hover {
+    background: $accent-color;
+  }
+}
+.images-list__item:not(:last-child) {
+  margin-bottom: 40px;
+}

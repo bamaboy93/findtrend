@@ -1,0 +1,14 @@
+.section-description {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  text-align: center;
+}
+
+.section-description__descr {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.2;
+  &--accent {
+    color: $secondary-title-color;
+  }
+}

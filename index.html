@@ -4,176 +4,370 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Findtrend</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
-      <a href="#">Findtrend</a>
-      <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">How it work</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Solution</a></li>
-          <li><a href="#">Features</a></li>
+    <div class="wrapper">
+      <!-- Header -->
+      <header class="header">
+        <a href="#" class="header__logo">Findtrend</a>
+        <nav class="header__nav">
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">About</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">How it work</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">Pricing</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">Solution</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">Features</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="user">
+          <li class="user__item"><a href="#" class="user__link">Login</a></li>
+          <li class="user__item">
+            <a href="#" class="user__link--bordered">Register</a>
+          </li>
         </ul>
-      </nav>
-      <ul>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Register</a></li>
-      </ul>
-    </header>
-    <main>
-      <section>
-        <h1>Minimize your tabs. <br />Find the trends!</h1>
-        <p>
+      </header>
+      <!-- Hero -->
+      <section class="hero container">
+        <h1 class="hero__title">Minimize your tabs. <br />Find the trends!</h1>
+        <p class="hero__descr">
           Don't let your computer memories consumes all of those browser tabs.
+          <br />
           Findtrend let you gathers all of your favorite website into one place.
         </p>
-        <a href="#">Get Started 🔥</a>
-        <ul>
-          <li>Cryptopunk - Search</li>
-          <li>Popular Design - Search</li>
-          <li>Product Design - Search</li>
-          <li>Elon Musk - Search</li>
+        <a href="#" class="hero__link">Get Started 🔥</a>
+        <ul class="hero__list">
+          <li class="hero__item">Cryptopunk - Search</li>
+          <li class="hero__item">Popular Design - Search</li>
+          <li class="hero__item">Product Design - Search</li>
+          <li class="hero__item">Elon Musk - Search</li>
         </ul>
       </section>
-      <section>
-        <h2>Open new tabs is sh*t</h2>
-        <div><div>Findtrend - Elon Musk</div></div>
-        <p>
-          A solution for your browser tabs and don't make your device get slower
-          over time. Get ease and faster to discover a trend with just one tab.
-        </p>
-      </section>
-      <section>
-        <h2>What is Findtrend</h2>
-        <p>
-          Findtrend helps you to increase your productivity and reduce your
-          computer's memory load,<span>
-            an application that can fulfill your daily browsing needs.</span
-          >
-        </p>
-      </section>
-      <section>
-        <h2>Findtrend make +1000 Startup grow</h2>
-        <ul>
-          <li>content</li>
-          <li>content</li>
-          <li>content</li>
-          <li>content</li>
-          <li>content</li>
-          <li>content</li>
-          <li>content</li>
-          <li>content</li>
-          <li>content</li>
-          <li>content</li>
-          <li>content</li>
-          <li>content</li>
-          <li>content</li>
-          <li>content</li>
-          <li>content</li>
-          <li>content</li>
-        </ul>
-      </section>
-      <section>
-        <h2>All platform connect to Findtrend</h2>
-        <ul>
-          <li><a href="">logo</a></li>
-          <li><a href="">logo</a></li>
-          <li><a href="">logo</a></li>
-          <li><a href="">logo</a></li>
-          <li><a href="">logo</a></li>
-          <li><a href="">logo</a></li>
-          <li><a href="">logo</a></li>
-          <li><a href="">logo</a></li>
-        </ul>
-        <img
-          src="./pictures/tweet 1.jpg"
-          alt="Elon Musk tweet"
-          width="800"
-          height="274"
-        />
-        <img
-          src="./pictures/tweet 2.jpg"
-          alt="Sawyer Merritt tweet"
-          width="800"
-          height="804"
-        />
-        <img
-          src="./pictures/tweet 3.jpg"
-          alt="Elon Musk tweet"
-          width="800"
-          height="274"
-        />
-        <button type="button">button</button>
-      </section>
-      <section>
-        <h2>Get your best deal</h2>
-        <div>
-          <p>Monthly</p>
-          <div>Slider</div>
-          <p>Yearly</p>
-        </div>
-        <ul>
-          <li>
-            <div>
-              <h3>Personal</h3>
-              <p>Special first packet for all</p>
-              <p><span>$8</span>/Month</p>
-              <ul>
-                <li><p>Up to 5 page each group</p></li>
-                <li><p>Up to 10 group page</p></li>
-                <li><p>5 Days group page saved</p></li>
-              </ul>
-              <button>Start Free Trial</button>
-            </div>
+    </div>
+    <main>
+      <!-- Section Example -->
+      <div class="bg-green">
+        <section class="section container">
+          <h2 class="section-example__title">Open new tabs is sh*t</h2>
+          <div class="section-example__box">
+            <div>Findtrend - Elon Musk</div>
+          </div>
+          <p class="section-example__descr">
+            A solution for your browser tabs and don't make your device get
+            slower over time. Get <br />
+            ease and faster to discover a trend with just one tab.
+          </p>
+        </section>
+      </div>
+      <!-- Section Description -->
+      <div class="bg-grey">
+        <section class="section container">
+          <h2 class="section-description__title visually-hidden">
+            What is Findtrend
+          </h2>
+          <p class="section-description__descr">
+            Findtrend helps you to increase your productivity and reduce your
+            computer's memory load,<span
+              class="section-description__descr--accent"
+            >
+              an application that can fulfill your daily browsing needs.</span
+            >
+          </p>
+        </section>
+      </div>
+      <!-- Section Partners -->
+      <section class="section container">
+        <h2 class="section-partners__title">
+          Findtrend make +1000 Startup grow
+        </h2>
+        <ul class="section-partners__list">
+          <li class="section-partners__item">
+            <div class="section-partners__box">logo</div>
           </li>
-          <li>
-            <div>
-              <h3>Regular</h3>
-              <p>Recommended for personal pro</p>
-              <p><span>$20</span>/Month</p>
-              <ul>
-                <li><p>Up to 15 page each group</p></li>
-                <li><p>Download page up to 20 page</p></li>
-                <li><p>Up to 10 group page</p></li>
-                <li><p>15 Days group page saved</p></li>
-              </ul>
-              <button>Start Free Trial</button>
-            </div>
+          <li class="section-partners__item">
+            <div class="section-partners__box">logo</div>
           </li>
-          <li>
-            <div>
-              <h3>Premium</h3>
-              <p>Packet for Startup & Company</p>
-              <p><span>$48</span>/Month</p>
-              <ul>
-                <li><p>Unlimited group pages</p></li>
-                <li><p>Unlimited download page</p></li>
-                <li><p>Unlimited page each group</p></li>
-                <li><p>Customize sorting group pages</p></li>
-                <li><p>Customize group page name</p></li>
-                <li><p>30 Days group page saved</p></li>
-              </ul>
-              <button>Start Free Trial</button>
-            </div>
+          <li class="section-partners__item">
+            <div class="section-partners__box">logo</div>
+          </li>
+          <li class="section-partners__item">
+            <div class="section-partners__box">logo</div>
+          </li>
+          <li class="section-partners__item">
+            <div class="section-partners__box">logo</div>
+          </li>
+          <li class="section-partners__item">
+            <div class="section-partners__box">logo</div>
+          </li>
+          <li class="section-partners__item">
+            <div class="section-partners__box">logo</div>
+          </li>
+          <li class="section-partners__item">
+            <div class="section-partners__box">logo</div>
+          </li>
+          <li class="section-partners__item">
+            <div class="section-partners__box">logo</div>
+          </li>
+          <li class="section-partners__item">
+            <div class="section-partners__box">logo</div>
+          </li>
+          <li class="section-partners__item">
+            <div class="section-partners__box">logo</div>
+          </li>
+          <li class="section-partners__item">
+            <div class="section-partners__box">logo</div>
+          </li>
+          <li class="section-partners__item">
+            <div class="section-partners__box">logo</div>
+          </li>
+          <li class="section-partners__item">
+            <div class="section-partners__box">logo</div>
+          </li>
+          <li class="section-partners__item">
+            <div class="section-partners__box">logo</div>
+          </li>
+          <li class="section-partners__item">
+            <div class="section-partners__box">logo</div>
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Join us on email for</h2>
-        <p>more trending topics</p>
-        <a href="#">Join Now </a>
-      </section>
+      <!-- Section Platforms -->
+      <div class="bg-grey">
+        <section class="section container">
+          <h2 class="section-platforms__title">
+            All platform connect to Findtrend
+          </h2>
+          <ul class="section-platforms__list">
+            <li class="section-platforms__item">
+              <a href="" class="section-platforms__link">logo</a>
+            </li>
+            <li class="section-platforms__item">
+              <a href="" class="section-platforms__link">logo</a>
+            </li>
+            <li class="section-platforms__item">
+              <a href="" class="section-platforms__link">logo</a>
+            </li>
+            <li class="section-platforms__item">
+              <a href="" class="section-platforms__link">logo</a>
+            </li>
+            <li class="section-platforms__item">
+              <a href="" class="section-platforms__link">logo</a>
+            </li>
+            <li class="section-platforms__item">
+              <a href="" class="section-platforms__link">logo</a>
+            </li>
+            <li class="section-platforms__item">
+              <a href="" class="section-platforms__link">logo</a>
+            </li>
+            <li class="section-platforms__item">
+              <a href="" class="section-platforms__link">logo</a>
+            </li>
+          </ul>
+          <ul class="images-list">
+            <li class="images-list__item">
+              <img
+                class="section-platforms__image"
+                src="./pictures/tweet1.jpg"
+                alt="Elon Musk tweet"
+                width="800"
+                height="274"
+              />
+            </li>
+            <li class="images-list__item">
+              <img
+                class="section-platforms__image"
+                src="./pictures/tweet2.jpg"
+                alt="Sawyer Merritt tweet"
+                width="800"
+                height="804"
+              />
+            </li>
+            <li class="images-list__item">
+              <img
+                class="section-platforms__image"
+                src="./pictures/tweet1.jpg"
+                alt="Elon Musk tweet"
+                width="800"
+                height="274"
+              />
+            </li>
+          </ul>
+          <a href="#" class="section__link">View More Trend</a>
+        </section>
+      </div>
+      <!-- Section Deals -->
+      <div class="bg-black">
+        <section class="section section--black container">
+          <h2 class="section-deals__title">Get your best deal</h2>
+          <div class="slider">
+            <p>Monthly</p>
+            <div>Slider</div>
+            <p>Yearly</p>
+          </div>
+          <ul class="deals">
+            <li class="deals__item">
+              <div class="deals__box">
+                <div class="deals__firstbox">
+                  <h3 class="deals__title">Personal</h3>
+                  <p class="deals__descr">Special first packet for all</p>
+                </div>
+                <div class="deals__secondbox">
+                  <p class="deals__price">
+                    <span class="deals__price--bold">$8</span>/Month
+                  </p>
+                  <ul class="deals-list">
+                    <li class="deals-list__item">
+                      <p class="deals-list__advantages">
+                        Up to 5 page each group
+                      </p>
+                    </li>
+                    <li class="deals-list__item">
+                      <p class="deals-list__advantages">Up to 10 group page</p>
+                    </li>
+                    <li class="deals-list__item">
+                      <p class="deals-list__advantages">
+                        5 Days group page saved
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <button class="deals__button">Start Free Trial</button>
+              </div>
+            </li>
+            <li class="deals__item">
+              <div class="deals__box">
+                <div class="deals__firstbox">
+                  <h3 class="deals__title">Regular</h3>
+                  <p class="deals__descr">Recommended for personal pro</p>
+                </div>
+                <div class="deals__secondbox">
+                  <p class="deals__price">
+                    <span class="deals__price--bold">$20</span>/Month
+                  </p>
+                  <ul class="deals-list">
+                    <li class="deals-list__item">
+                      <p class="deals-list__advantages">
+                        Up to 15 page each group
+                      </p>
+                    </li>
+                    <li class="deals-list__item">
+                      <p class="deals-list__advantages">
+                        Download page up to 20 page
+                      </p>
+                    </li>
+                    <li class="deals-list__item">
+                      <p class="deals-list__advantages">Up to 10 group page</p>
+                    </li>
+                    <li class="deals-list__item">
+                      <p class="deals-list__advantages">
+                        15 Days group page saved
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <button class="deals__button">Start Free Trial</button>
+              </div>
+            </li>
+            <li class="deals__item">
+              <div class="deals__box">
+                <div class="deals__firstbox">
+                  <h3 class="deals__title">Premium</h3>
+                  <p class="deals__descr">Packet for Startup & Company</p>
+                </div>
+                <div class="deals__secondbox">
+                  <p class="deals__price">
+                    <span class="deals__price--bold">$48</span>/Month
+                  </p>
+                  <ul class="deals-list">
+                    <li class="deals-list__item">
+                      <p class="deals-list__advantages">
+                        Unlimited group pages
+                      </p>
+                    </li>
+                    <li class="deals-list__item">
+                      <p class="deals-list__advantages">
+                        Unlimited download page
+                      </p>
+                    </li>
+                    <li class="deals-list__item">
+                      <p class="deals-list__advantages">
+                        Unlimited page each group
+                      </p>
+                    </li>
+                    <li class="deals-list__item">
+                      <p class="deals-list__advantages">
+                        Customize sorting group pages
+                      </p>
+                    </li>
+                    <li class="deals-list__item">
+                      <p class="deals-list__advantages">
+                        Customize group page name
+                      </p>
+                    </li>
+                    <li class="deals-list__item">
+                      <p class="deals-list__advantages">
+                        30 Days group page saved
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <button class="deals__button">Start Free Trial</button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <!-- Section Join Us -->
+      <div class="bg-green">
+        <section class="section">
+          <h2 class="section-joinus__title">
+            Join us on email for <br />
+            <span class="section-joinus__title--accent"
+              >more trending topics</span
+            >
+          </h2>
+
+          <a href="#" class="section__link">Join Now </a>
+        </section>
+      </div>
     </main>
-    <footer>
-      <a href="#">Findtrend</a>
-      <ul>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms and Conditions</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Careers</a></li>
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="#" class="footer__logo">Findtrend</a>
+      <ul class="footer-list">
+        <li class="footer-list__item">
+          <a href="#" class="footer-list__link">Privacy Policy</a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#" class="footer-list__link">Terms and Conditions</a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#" class="footer-list__link">Contact Us</a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#" class="footer-list__link">Careers</a>
+        </li>
       </ul>
     </footer>
   </body>
