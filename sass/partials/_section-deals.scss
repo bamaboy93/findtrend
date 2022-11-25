@@ -4,6 +4,7 @@
   font-size: 64px;
   line-height: 1.2;
   color: $title-text-color;
+  text-shadow: $title-text-shadow;
 }
 
 .deals {
@@ -20,9 +21,11 @@
   text-align: center;
   background: $forth-bg-color;
   border-radius: 16px;
+  box-shadow: $secondary-box-shadow;
   &:focus,
   &:hover {
     background: $accent-color;
+    box-shadow: $main-box-shadow;
   }
 }
 .deals__firstbox {
@@ -73,5 +76,15 @@
   &:hover {
     background: $third-bg-color;
     color: $title-text-color;
+  }
+
+  &--first {
+    margin-top: 170px;
+  }
+  &--second {
+    margin-top: 126px;
+  }
+  &--third {
+    margin-top: 40px;
   }
 }

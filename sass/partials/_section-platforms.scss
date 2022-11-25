@@ -8,6 +8,7 @@
   font-weight: 700;
   font-size: 64px;
   line-height: 1.2;
+  text-shadow: $title-text-shadow;
 }
 .section-platforms__list {
   margin-bottom: 80px;
@@ -23,10 +24,12 @@
   padding: 32px;
   border-radius: 8px;
   background: $bg-color;
+  box-shadow: $secondary-box-shadow;
 
   &:focus,
   &:hover {
     background: $accent-color;
+    box-shadow: $main-box-shadow;
   }
 }
 .images-list__item:not(:last-child) {

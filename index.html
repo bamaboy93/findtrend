@@ -16,12 +16,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="shortcut icon" href="./pictures/favicon.ico" />
   </head>
   <body>
     <div class="wrapper">
       <!-- Header -->
       <header class="header">
-        <a href="#" class="header__logo">Findtrend</a>
+        <a href="#" class="header__logo">
+          <svg class="header__icon">
+            <use href="./pictures/sprite.svg#icon-logo"></use></svg
+          >Findtrend</a
+        >
         <nav class="header__nav">
           <ul class="site-nav">
             <li class="site-nav__item">
@@ -58,10 +63,90 @@
         </p>
         <a href="#" class="hero__link">Get Started 🔥</a>
         <ul class="hero__list">
-          <li class="hero__item">Cryptopunk - Search</li>
-          <li class="hero__item">Popular Design - Search</li>
-          <li class="hero__item">Product Design - Search</li>
-          <li class="hero__item">Elon Musk - Search</li>
+          <li class="hero__item">
+            <div class="block">
+              <img
+                src="./pictures/twitter.png"
+                alt="twitter"
+                width="32"
+                height="32"
+                class="block__image"
+              />
+              <p class="block__text">Cryptopunk - Search</p>
+              <div class="block__overlay">
+                <svg class="block__icon">
+                  <use
+                    href="./pictures/sprite.svg#icon-cross"
+                    width="15"
+                    heigth="15"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+          </li>
+          <li class="hero__item">
+            <div class="block">
+              <img
+                src="./pictures/pinterest.png"
+                alt="twitter"
+                width="32"
+                height="32"
+                class="block__image"
+              />
+              <p class="block__text">Popular Design - Se</p>
+              <div class="block__overlay">
+                <svg class="block__icon">
+                  <use
+                    href="./pictures/sprite.svg#icon-cross"
+                    width="15"
+                    heigth="15"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+          </li>
+          <li class="hero__item">
+            <div class="block">
+              <img
+                src="./pictures/facebook.png"
+                alt="twitter"
+                width="32"
+                height="32"
+                class="block__image"
+              />
+              <p class="block__text">Product Design - Se</p>
+              <div class="block__overlay">
+                <svg class="block__icon">
+                  <use
+                    href="./pictures/sprite.svg#icon-cross"
+                    width="15"
+                    heigth="15"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+          </li>
+          <li class="hero__item">
+            <div class="block">
+              <img
+                src="./pictures/ball.png"
+                alt="twitter"
+                width="32"
+                height="32"
+                class="block__image"
+              />
+              <p class="block__text">Elon Musk - Search</p>
+              <div class="block__overlay">
+                <svg class="block__icon">
+                  <use
+                    href="./pictures/sprite.svg#icon-cross"
+                    width="15"
+                    heigth="15"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+          </li>
         </ul>
       </section>
     </div>
@@ -70,8 +155,34 @@
       <div class="bg-green">
         <section class="section container">
           <h2 class="section-example__title">Open new tabs is sh*t</h2>
-          <div class="section-example__box">
-            <div>Findtrend - Elon Musk</div>
+          <div class="section-example__wrapper">
+            <svg class="section-example__icon">
+              <use href="./pictures/sprite.svg#icon-group1"></use>
+            </svg>
+            <div class="section-example__box">
+              <div class="section-example__block">
+                <img
+                  src="./pictures/logo.png"
+                  alt="twitter"
+                  width="32"
+                  height="32"
+                  class="section-example__image"
+                />
+                <p class="section-example__text">Findtrend - Elon Musk</p>
+                <div class="overlay">
+                  <svg class="overlay__icon">
+                    <use
+                      href="./pictures/sprite.svg#icon-cross"
+                      width="15"
+                      heigth="15"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <svg class="section-example__icon">
+              <use href="./pictures/sprite.svg#icon-group2"></use>
+            </svg>
           </div>
           <p class="section-example__descr">
             A solution for your browser tabs and don't make your device get
@@ -103,52 +214,164 @@
         </h2>
         <ul class="section-partners__list">
           <li class="section-partners__item">
-            <div class="section-partners__box">logo</div>
+            <div class="section-partners__box">
+              <img
+                src="./pictures/microsoft.png"
+                alt="microsoft logo"
+                width="190"
+                height="40"
+              />
+            </div>
           </li>
           <li class="section-partners__item">
-            <div class="section-partners__box">logo</div>
+            <div class="section-partners__box">
+              <img
+                src="./pictures/allianz.png"
+                alt="allianz logo"
+                width="156"
+                height="40"
+              />
+            </div>
           </li>
           <li class="section-partners__item">
-            <div class="section-partners__box">logo</div>
+            <div class="section-partners__box">
+              <img
+                src="./pictures/upwork.png"
+                alt="upwork logo"
+                width="146"
+                height="44"
+              />
+            </div>
           </li>
           <li class="section-partners__item">
-            <div class="section-partners__box">logo</div>
+            <div class="section-partners__box">
+              <img
+                src="./pictures/volvo.png"
+                alt="volvo logo"
+                width="174"
+                height="24"
+              />
+            </div>
           </li>
           <li class="section-partners__item">
-            <div class="section-partners__box">logo</div>
+            <div class="section-partners__box">
+              <img
+                src="./pictures/grab.png"
+                alt="grab logo"
+                width="112"
+                height="44"
+              />
+            </div>
           </li>
           <li class="section-partners__item">
-            <div class="section-partners__box">logo</div>
+            <div class="section-partners__box">
+              <img
+                src="./pictures/verizon.png"
+                alt="verizon logo"
+                width="162"
+                height="36"
+              />
+            </div>
           </li>
           <li class="section-partners__item">
-            <div class="section-partners__box">logo</div>
+            <div class="section-partners__box">
+              <img
+                src="./pictures/coinbase.png"
+                alt="coinbase logo"
+                width="148"
+                height="32"
+              />
+            </div>
           </li>
           <li class="section-partners__item">
-            <div class="section-partners__box">logo</div>
+            <div class="section-partners__box">
+              <img
+                src="./pictures/expedia.png"
+                alt="expedia logo"
+                width="151"
+                height="44"
+              />
+            </div>
           </li>
           <li class="section-partners__item">
-            <div class="section-partners__box">logo</div>
+            <div class="section-partners__box">
+              <img
+                src="./pictures/airtable.png"
+                alt="airtable logo"
+                width="182"
+                height="40"
+              />
+            </div>
           </li>
           <li class="section-partners__item">
-            <div class="section-partners__box">logo</div>
+            <div class="section-partners__box">
+              <img
+                src="./pictures/magento.png"
+                alt="magento logo"
+                width="164"
+                height="48"
+              />
+            </div>
           </li>
           <li class="section-partners__item">
-            <div class="section-partners__box">logo</div>
+            <div class="section-partners__box">
+              <img
+                src="./pictures/carrera.png"
+                alt="carrera logo"
+                width="174"
+                height="42"
+              />
+            </div>
           </li>
           <li class="section-partners__item">
-            <div class="section-partners__box">logo</div>
+            <div class="section-partners__box">
+              <img
+                src="./pictures/bonanza.png"
+                alt="bonanza logo"
+                width="162"
+                height="28"
+              />
+            </div>
           </li>
           <li class="section-partners__item">
-            <div class="section-partners__box">logo</div>
+            <div class="section-partners__box">
+              <img
+                src="./pictures/wetrtansfer.png"
+                alt="wetransfer logo"
+                width="176"
+                height="38"
+              />
+            </div>
           </li>
           <li class="section-partners__item">
-            <div class="section-partners__box">logo</div>
+            <div class="section-partners__box">
+              <img
+                src="./pictures/suzuki.png"
+                alt="suzuki logo"
+                width="178"
+                height="34"
+              />
+            </div>
           </li>
           <li class="section-partners__item">
-            <div class="section-partners__box">logo</div>
+            <div class="section-partners__box">
+              <img
+                src="./pictures/algolia.png"
+                alt="algolia logo"
+                width="162"
+                height="40"
+              />
+            </div>
           </li>
           <li class="section-partners__item">
-            <div class="section-partners__box">logo</div>
+            <div class="section-partners__box">
+              <img
+                src="./pictures/heineken.png"
+                alt="heineken logo"
+                width="190"
+                height="34"
+              />
+            </div>
           </li>
         </ul>
       </section>
@@ -160,28 +383,97 @@
           </h2>
           <ul class="section-platforms__list">
             <li class="section-platforms__item">
-              <a href="" class="section-platforms__link">logo</a>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="section-platforms__link"
+                ><img
+                  src="./pictures/facebook.png"
+                  alt="facebook logo"
+                  width="40"
+                  height="40"
+              /></a>
             </li>
             <li class="section-platforms__item">
-              <a href="" class="section-platforms__link">logo</a>
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                class="section-platforms__link"
+                ><img
+                  src="./pictures/twitter.png"
+                  alt="twitter logo"
+                  width="40"
+                  height="40"
+              /></a>
             </li>
             <li class="section-platforms__item">
-              <a href="" class="section-platforms__link">logo</a>
+              <a
+                href="https://dribbble.com/"
+                target="_blank"
+                class="section-platforms__link"
+                ><img
+                  src="./pictures/ball.png"
+                  alt="dribble logo"
+                  width="40"
+                  height="40"
+              /></a>
             </li>
             <li class="section-platforms__item">
-              <a href="" class="section-platforms__link">logo</a>
+              <a
+                href="https://pinterest.com/"
+                target="_blank"
+                class="section-platforms__link"
+                ><img
+                  src="./pictures/pinterest.png"
+                  alt="pinterest logo"
+                  width="40"
+                  height="40"
+              /></a>
             </li>
             <li class="section-platforms__item">
-              <a href="" class="section-platforms__link">logo</a>
+              <a href="" class="section-platforms__link"
+                ><img
+                  src="./pictures/m.png"
+                  alt="m logo"
+                  width="40"
+                  height="40"
+              /></a>
             </li>
             <li class="section-platforms__item">
-              <a href="" class="section-platforms__link">logo</a>
+              <a
+                href="https://www.reddit.com/"
+                target="_blank"
+                class="section-platforms__link"
+                ><img
+                  src="./pictures/reddit.png"
+                  alt="reddit logo"
+                  width="40"
+                  height="40"
+              /></a>
             </li>
             <li class="section-platforms__item">
-              <a href="" class="section-platforms__link">logo</a>
+              <a
+                href="https://www.vk.com/"
+                target="_blank"
+                class="section-platforms__link"
+                ><img
+                  src="./pictures/vk.png"
+                  alt="vk logo"
+                  width="40"
+                  height="40"
+              /></a>
             </li>
             <li class="section-platforms__item">
-              <a href="" class="section-platforms__link">logo</a>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="section-platforms__link"
+                ><img
+                  src="./pictures/linkedin.png"
+                  alt="linkedin logo"
+                  width="40"
+                  height="40"
+              /></a>
             </li>
           </ul>
           <ul class="images-list">
@@ -252,7 +544,9 @@
                     </li>
                   </ul>
                 </div>
-                <button class="deals__button">Start Free Trial</button>
+                <button class="deals__button deals__button--first">
+                  Start Free Trial
+                </button>
               </div>
             </li>
             <li class="deals__item">
@@ -286,7 +580,9 @@
                     </li>
                   </ul>
                 </div>
-                <button class="deals__button">Start Free Trial</button>
+                <button class="deals__button deals__button--second">
+                  Start Free Trial
+                </button>
               </div>
             </li>
             <li class="deals__item">
@@ -332,7 +628,9 @@
                     </li>
                   </ul>
                 </div>
-                <button class="deals__button">Start Free Trial</button>
+                <button class="deals__button deals__button--third">
+                  Start Free Trial
+                </button>
               </div>
             </li>
           </ul>
@@ -354,7 +652,11 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-      <a href="#" class="footer__logo">Findtrend</a>
+      <a href="#" class="footer__logo"
+        ><svg class="footer__icon">
+          <use href="./pictures/sprite.svg#icon-logo-black"></use></svg
+        >Findtrend</a
+      >
       <ul class="footer-list">
         <li class="footer-list__item">
           <a href="#" class="footer-list__link">Privacy Policy</a>

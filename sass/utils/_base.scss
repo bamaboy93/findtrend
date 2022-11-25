@@ -9,6 +9,18 @@ body {
   letter-spacing: 0.03em;
 }
 
+.wrapper {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../pictures/Bg-hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;

@@ -2,8 +2,10 @@
   font-weight: 900;
   font-size: 72px;
   line-height: 1.12;
+  text-shadow: $title-text-shadow;
 
   &--accent {
     color: $add-title-color;
+    text-shadow: none;
   }
 }
