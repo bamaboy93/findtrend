@@ -16,6 +16,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="shortcut icon" href="./pictures/favicon.ico" />
   </head>
   <body>
@@ -47,7 +52,9 @@
           </ul>
         </nav>
         <ul class="user">
-          <li class="user__item"><a href="#" class="user__link">Login</a></li>
+          <li class="user__item">
+            <a href="#" class="user__link">Login</a>
+          </li>
           <li class="user__item">
             <a href="#" class="user__link--bordered">Register</a>
           </li>
@@ -55,13 +62,17 @@
       </header>
       <!-- Hero -->
       <section class="hero container">
-        <h1 class="hero__title">Minimize your tabs. <br />Find the trends!</h1>
+        <h1 class="hero__title animate__animated animate__backInLeft">
+          Minimize your tabs. <br />Find the trends!
+        </h1>
         <p class="hero__descr">
           Don't let your computer memories consumes all of those browser tabs.
           <br />
           Findtrend let you gathers all of your favorite website into one place.
         </p>
-        <a href="#" class="hero__link">Get Started 🔥</a>
+        <a href="#" class="hero__link animate__animated animate__heartBeat"
+          >Get Started 🔥</a
+        >
         <ul class="hero__list">
           <li class="hero__item">
             <div class="block">
@@ -154,7 +165,13 @@
       <!-- Section Example -->
       <div class="bg-green">
         <section class="section container">
-          <h2 class="section-example__title">Open new tabs is sh*t</h2>
+          <h2
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            class="section-example__title"
+          >
+            Open new tabs is sh*t
+          </h2>
           <div class="section-example__wrapper">
             <svg class="section-example__icon">
               <use href="./pictures/sprite.svg#icon-group1"></use>
@@ -184,7 +201,11 @@
               <use href="./pictures/sprite.svg#icon-group2"></use>
             </svg>
           </div>
-          <p class="section-example__descr">
+          <p
+            data-aos="fade-left"
+            data-aos-duration="1300"
+            class="section-example__descr"
+          >
             A solution for your browser tabs and don't make your device get
             slower over time. Get <br />
             ease and faster to discover a trend with just one tab.
@@ -197,7 +218,11 @@
           <h2 class="section-description__title visually-hidden">
             What is Findtrend
           </h2>
-          <p class="section-description__descr">
+          <p
+            data-aos="zoom-in-down"
+            data-aos-duration="1500"
+            class="section-description__descr"
+          >
             Findtrend helps you to increase your productivity and reduce your
             computer's memory load,<span
               class="section-description__descr--accent"
@@ -209,11 +234,19 @@
       </div>
       <!-- Section Partners -->
       <section class="section container">
-        <h2 class="section-partners__title">
+        <h2
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          class="section-partners__title"
+        >
           Findtrend make +1000 Startup grow
         </h2>
         <ul class="section-partners__list">
-          <li class="section-partners__item">
+          <li
+            class="section-partners__item"
+            data-aos="zoom-in-right"
+            data-aos-duration="1000"
+          >
             <div class="section-partners__box">
               <img
                 src="./pictures/microsoft.png"
@@ -223,7 +256,11 @@
               />
             </div>
           </li>
-          <li class="section-partners__item">
+          <li
+            class="section-partners__item"
+            data-aos="zoom-in-right"
+            data-aos-duration="1100"
+          >
             <div class="section-partners__box">
               <img
                 src="./pictures/allianz.png"
@@ -233,7 +270,11 @@
               />
             </div>
           </li>
-          <li class="section-partners__item">
+          <li
+            class="section-partners__item"
+            data-aos="zoom-in-right"
+            data-aos-duration="1200"
+          >
             <div class="section-partners__box">
               <img
                 src="./pictures/upwork.png"
@@ -243,7 +284,11 @@
               />
             </div>
           </li>
-          <li class="section-partners__item">
+          <li
+            class="section-partners__item"
+            data-aos="zoom-in-right"
+            data-aos-duration="1300"
+          >
             <div class="section-partners__box">
               <img
                 src="./pictures/volvo.png"
@@ -253,7 +298,11 @@
               />
             </div>
           </li>
-          <li class="section-partners__item">
+          <li
+            class="section-partners__item"
+            data-aos="zoom-in-right"
+            data-aos-duration="1400"
+          >
             <div class="section-partners__box">
               <img
                 src="./pictures/grab.png"
@@ -263,7 +312,11 @@
               />
             </div>
           </li>
-          <li class="section-partners__item">
+          <li
+            class="section-partners__item"
+            data-aos="zoom-in-right"
+            data-aos-duration="1500"
+          >
             <div class="section-partners__box">
               <img
                 src="./pictures/verizon.png"
@@ -273,7 +326,11 @@
               />
             </div>
           </li>
-          <li class="section-partners__item">
+          <li
+            class="section-partners__item"
+            data-aos="zoom-in-right"
+            data-aos-duration="1600"
+          >
             <div class="section-partners__box">
               <img
                 src="./pictures/coinbase.png"
@@ -283,7 +340,11 @@
               />
             </div>
           </li>
-          <li class="section-partners__item">
+          <li
+            class="section-partners__item"
+            data-aos="zoom-in-right"
+            data-aos-duration="1700"
+          >
             <div class="section-partners__box">
               <img
                 src="./pictures/expedia.png"
@@ -293,7 +354,11 @@
               />
             </div>
           </li>
-          <li class="section-partners__item">
+          <li
+            class="section-partners__item"
+            data-aos="zoom-in-right"
+            data-aos-duration="1800"
+          >
             <div class="section-partners__box">
               <img
                 src="./pictures/airtable.png"
@@ -303,7 +368,11 @@
               />
             </div>
           </li>
-          <li class="section-partners__item">
+          <li
+            class="section-partners__item"
+            data-aos="zoom-in-right"
+            data-aos-duration="1900"
+          >
             <div class="section-partners__box">
               <img
                 src="./pictures/magento.png"
@@ -313,7 +382,11 @@
               />
             </div>
           </li>
-          <li class="section-partners__item">
+          <li
+            class="section-partners__item"
+            data-aos="zoom-in-right"
+            data-aos-duration="2000"
+          >
             <div class="section-partners__box">
               <img
                 src="./pictures/carrera.png"
@@ -323,7 +396,11 @@
               />
             </div>
           </li>
-          <li class="section-partners__item">
+          <li
+            class="section-partners__item"
+            data-aos="zoom-in-right"
+            data-aos-duration="2100"
+          >
             <div class="section-partners__box">
               <img
                 src="./pictures/bonanza.png"
@@ -333,7 +410,11 @@
               />
             </div>
           </li>
-          <li class="section-partners__item">
+          <li
+            class="section-partners__item"
+            data-aos="zoom-in-right"
+            data-aos-duration="2200"
+          >
             <div class="section-partners__box">
               <img
                 src="./pictures/wetrtansfer.png"
@@ -343,7 +424,11 @@
               />
             </div>
           </li>
-          <li class="section-partners__item">
+          <li
+            class="section-partners__item"
+            data-aos="zoom-in-right"
+            data-aos-duration="2300"
+          >
             <div class="section-partners__box">
               <img
                 src="./pictures/suzuki.png"
@@ -353,7 +438,11 @@
               />
             </div>
           </li>
-          <li class="section-partners__item">
+          <li
+            class="section-partners__item"
+            data-aos="zoom-in-right"
+            data-aos-duration="2400"
+          >
             <div class="section-partners__box">
               <img
                 src="./pictures/algolia.png"
@@ -363,7 +452,11 @@
               />
             </div>
           </li>
-          <li class="section-partners__item">
+          <li
+            class="section-partners__item"
+            data-aos="zoom-in-right"
+            data-aos-duration="2500"
+          >
             <div class="section-partners__box">
               <img
                 src="./pictures/heineken.png"
@@ -378,7 +471,11 @@
       <!-- Section Platforms -->
       <div class="bg-grey">
         <section class="section container">
-          <h2 class="section-platforms__title">
+          <h2
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            class="section-platforms__title"
+          >
             All platform connect to Findtrend
           </h2>
           <ul class="section-platforms__list">
@@ -511,14 +608,24 @@
       <!-- Section Deals -->
       <div class="bg-black">
         <section class="section section--black container">
-          <h2 class="section-deals__title">Get your best deal</h2>
+          <h2
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            class="section-deals__title"
+          >
+            Get your best deal
+          </h2>
           <div class="slider">
             <p>Monthly</p>
             <div>Slider</div>
             <p>Yearly</p>
           </div>
           <ul class="deals">
-            <li class="deals__item">
+            <li
+              data-aos="zoom-in-up"
+              data-aos-duration="1500"
+              class="deals__item"
+            >
               <div class="deals__box">
                 <div class="deals__firstbox">
                   <h3 class="deals__title">Personal</h3>
@@ -549,7 +656,11 @@
                 </button>
               </div>
             </li>
-            <li class="deals__item">
+            <li
+              data-aos="zoom-in-up"
+              data-aos-duration="2500"
+              class="deals__item"
+            >
               <div class="deals__box">
                 <div class="deals__firstbox">
                   <h3 class="deals__title">Regular</h3>
@@ -585,7 +696,11 @@
                 </button>
               </div>
             </li>
-            <li class="deals__item">
+            <li
+              data-aos="zoom-in-up"
+              data-aos-duration="3000"
+              class="deals__item"
+            >
               <div class="deals__box">
                 <div class="deals__firstbox">
                   <h3 class="deals__title">Premium</h3>
@@ -639,7 +754,11 @@
       <!-- Section Join Us -->
       <div class="bg-green">
         <section class="section">
-          <h2 class="section-joinus__title">
+          <h2
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            class="section-joinus__title"
+          >
             Join us on email for <br />
             <span class="section-joinus__title--accent"
               >more trending topics</span
@@ -672,5 +791,8 @@
         </li>
       </ul>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/aos.js"></script>
   </body>
 </html>
