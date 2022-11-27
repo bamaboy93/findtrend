@@ -29,9 +29,12 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 1.4;
+  transition: color 250ms $cubic-bezier;
   &:hover,
   &:focus {
     color: $title-text-color;
+    animation: pulse;
+    animation-duration: 2s;
   }
 }
 .hero__list {

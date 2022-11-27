@@ -14,9 +14,12 @@
   line-height: 1.4;
   background: $third-bg-color;
   color: $title-text-color;
+  transition: color 500ms $cubic-bezier;
 
   &:focus,
   &:hover {
     color: $accent-color;
+    animation: pulse;
+    animation-duration: 2s;
   }
 }

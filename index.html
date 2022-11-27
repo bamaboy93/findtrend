@@ -479,7 +479,11 @@
             All platform connect to Findtrend
           </h2>
           <ul class="section-platforms__list">
-            <li class="section-platforms__item">
+            <li
+              class="section-platforms__item"
+              data-aos="fade-up-right"
+              data-aos-duration="1000"
+            >
               <a
                 href="https://www.facebook.com/"
                 target="_blank"
@@ -491,7 +495,11 @@
                   height="40"
               /></a>
             </li>
-            <li class="section-platforms__item">
+            <li
+              class="section-platforms__item"
+              data-aos="fade-up-right"
+              data-aos-duration="1300"
+            >
               <a
                 href="https://www.twitter.com/"
                 target="_blank"
@@ -503,7 +511,11 @@
                   height="40"
               /></a>
             </li>
-            <li class="section-platforms__item">
+            <li
+              class="section-platforms__item"
+              data-aos="fade-up-right"
+              data-aos-duration="1600"
+            >
               <a
                 href="https://dribbble.com/"
                 target="_blank"
@@ -515,7 +527,11 @@
                   height="40"
               /></a>
             </li>
-            <li class="section-platforms__item">
+            <li
+              class="section-platforms__item"
+              data-aos="fade-up-right"
+              data-aos-duration="1900"
+            >
               <a
                 href="https://pinterest.com/"
                 target="_blank"
@@ -527,7 +543,11 @@
                   height="40"
               /></a>
             </li>
-            <li class="section-platforms__item">
+            <li
+              class="section-platforms__item"
+              data-aos="fade-up-right"
+              data-aos-duration="2200"
+            >
               <a href="" class="section-platforms__link"
                 ><img
                   src="./pictures/m.png"
@@ -536,7 +556,11 @@
                   height="40"
               /></a>
             </li>
-            <li class="section-platforms__item">
+            <li
+              class="section-platforms__item"
+              data-aos="fade-up-right"
+              data-aos-duration="2500"
+            >
               <a
                 href="https://www.reddit.com/"
                 target="_blank"
@@ -548,7 +572,11 @@
                   height="40"
               /></a>
             </li>
-            <li class="section-platforms__item">
+            <li
+              class="section-platforms__item"
+              data-aos="fade-up-right"
+              data-aos-duration="2800"
+            >
               <a
                 href="https://www.vk.com/"
                 target="_blank"
@@ -560,7 +588,11 @@
                   height="40"
               /></a>
             </li>
-            <li class="section-platforms__item">
+            <li
+              class="section-platforms__item"
+              data-aos="fade-up-right"
+              data-aos-duration="3000"
+            >
               <a
                 href="https://www.linkedin.com/"
                 target="_blank"
@@ -576,6 +608,10 @@
           <ul class="images-list">
             <li class="images-list__item">
               <img
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
                 class="section-platforms__image"
                 src="./pictures/tweet1.jpg"
                 alt="Elon Musk tweet"
@@ -585,6 +621,10 @@
             </li>
             <li class="images-list__item">
               <img
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
                 class="section-platforms__image"
                 src="./pictures/tweet2.jpg"
                 alt="Sawyer Merritt tweet"
@@ -594,6 +634,10 @@
             </li>
             <li class="images-list__item">
               <img
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
                 class="section-platforms__image"
                 src="./pictures/tweet1.jpg"
                 alt="Elon Musk tweet"
@@ -616,9 +660,17 @@
             Get your best deal
           </h2>
           <div class="slider">
-            <p>Monthly</p>
-            <div>Slider</div>
-            <p>Yearly</p>
+            <p class="slider__text" data-text-monthly>Monthly</p>
+            <label class="slider__switch">
+              <input class="slider__input" type="checkbox" data-checkbox />
+              <span class="slider__switcher"></span>
+            </label>
+            <p class="slider__text slider__text--yearly" data-text-yearly>
+              Yearly
+            </p>
+            <svg class="slider__icon">
+              <use href="./pictures/sprite.svg#icon-group3"></use>
+            </svg>
           </div>
           <ul class="deals">
             <li
@@ -629,6 +681,7 @@
               <div class="deals__box">
                 <div class="deals__firstbox">
                   <h3 class="deals__title">Personal</h3>
+
                   <p class="deals__descr">Special first packet for all</p>
                 </div>
                 <div class="deals__secondbox">
@@ -637,14 +690,23 @@
                   </p>
                   <ul class="deals-list">
                     <li class="deals-list__item">
+                      <svg class="deals-list__icon">
+                        <use href="./pictures/sprite.svg#icon-vector"></use>
+                      </svg>
                       <p class="deals-list__advantages">
                         Up to 5 page each group
                       </p>
                     </li>
                     <li class="deals-list__item">
+                      <svg class="deals-list__icon">
+                        <use href="./pictures/sprite.svg#icon-vector"></use>
+                      </svg>
                       <p class="deals-list__advantages">Up to 10 group page</p>
                     </li>
                     <li class="deals-list__item">
+                      <svg class="deals-list__icon">
+                        <use href="./pictures/sprite.svg#icon-vector"></use>
+                      </svg>
                       <p class="deals-list__advantages">
                         5 Days group page saved
                       </p>
@@ -672,19 +734,31 @@
                   </p>
                   <ul class="deals-list">
                     <li class="deals-list__item">
+                      <svg class="deals-list__icon">
+                        <use href="./pictures/sprite.svg#icon-vector"></use>
+                      </svg>
                       <p class="deals-list__advantages">
                         Up to 15 page each group
                       </p>
                     </li>
                     <li class="deals-list__item">
+                      <svg class="deals-list__icon">
+                        <use href="./pictures/sprite.svg#icon-vector"></use>
+                      </svg>
                       <p class="deals-list__advantages">
                         Download page up to 20 page
                       </p>
                     </li>
                     <li class="deals-list__item">
+                      <svg class="deals-list__icon">
+                        <use href="./pictures/sprite.svg#icon-vector"></use>
+                      </svg>
                       <p class="deals-list__advantages">Up to 10 group page</p>
                     </li>
                     <li class="deals-list__item">
+                      <svg class="deals-list__icon">
+                        <use href="./pictures/sprite.svg#icon-vector"></use>
+                      </svg>
                       <p class="deals-list__advantages">
                         15 Days group page saved
                       </p>
@@ -712,31 +786,49 @@
                   </p>
                   <ul class="deals-list">
                     <li class="deals-list__item">
+                      <svg class="deals-list__icon">
+                        <use href="./pictures/sprite.svg#icon-vector"></use>
+                      </svg>
                       <p class="deals-list__advantages">
                         Unlimited group pages
                       </p>
                     </li>
                     <li class="deals-list__item">
+                      <svg class="deals-list__icon">
+                        <use href="./pictures/sprite.svg#icon-vector"></use>
+                      </svg>
                       <p class="deals-list__advantages">
                         Unlimited download page
                       </p>
                     </li>
                     <li class="deals-list__item">
+                      <svg class="deals-list__icon">
+                        <use href="./pictures/sprite.svg#icon-vector"></use>
+                      </svg>
                       <p class="deals-list__advantages">
                         Unlimited page each group
                       </p>
                     </li>
                     <li class="deals-list__item">
+                      <svg class="deals-list__icon">
+                        <use href="./pictures/sprite.svg#icon-vector"></use>
+                      </svg>
                       <p class="deals-list__advantages">
                         Customize sorting group pages
                       </p>
                     </li>
                     <li class="deals-list__item">
+                      <svg class="deals-list__icon">
+                        <use href="./pictures/sprite.svg#icon-vector"></use>
+                      </svg>
                       <p class="deals-list__advantages">
                         Customize group page name
                       </p>
                     </li>
                     <li class="deals-list__item">
+                      <svg class="deals-list__icon">
+                        <use href="./pictures/sprite.svg#icon-vector"></use>
+                      </svg>
                       <p class="deals-list__advantages">
                         30 Days group page saved
                       </p>
@@ -793,6 +885,7 @@
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/slider.js"></script>
     <script src="./js/aos.js"></script>
   </body>
 </html>

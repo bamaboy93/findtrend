@@ -23,13 +23,17 @@
   display: inline-block;
   padding: 32px;
   border-radius: 8px;
-  background: $bg-color;
+  background-color: $bg-color;
   box-shadow: $secondary-box-shadow;
+  transition: background-color 250ms $cubic-bezier,
+    box-shadow 250ms $cubic-bezier;
 
   &:focus,
   &:hover {
     background: $accent-color;
     box-shadow: $main-box-shadow;
+    animation: pulse;
+    animation-duration: 1s;
   }
 }
 .images-list__item:not(:last-child) {

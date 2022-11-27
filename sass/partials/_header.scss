@@ -22,6 +22,11 @@
     text-align: center;
     color: $title-text-color;
     text-shadow: $logo-text-shadow;
+    &:hover,
+    &:focus {
+      animation: tada;
+      animation-duration: 1s;
+    }
   }
 }
 .header__nav {
@@ -42,9 +47,12 @@
   font-size: 18px;
   line-height: 1;
   color: $title-text-color;
+  transition: color 250ms $cubic-bezier;
   &:hover,
   &:focus {
     color: $accent-color;
+    animation: rubberBand;
+    animation-duration: 1s;
   }
 }
 .user {
@@ -58,11 +66,15 @@
   padding: 8px 32px;
   border-radius: 40px;
   background: $bg-color;
+  outline: black;
   color: inherit;
   font-size: 18px;
   line-height: 1;
+  transition: outline 250ms $cubic-bezier;
   &:hover,
   &:focus {
     outline: 3px solid $accent-color;
+    animation: pulse;
+    animation-duration: 1s;
   }
 }
