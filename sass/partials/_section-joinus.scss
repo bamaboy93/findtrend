@@ -1,11 +1,14 @@
 .section-joinus__title {
   font-weight: 900;
-  font-size: 72px;
+  font-size: 36px;
   line-height: 1.12;
   text-shadow: $title-text-shadow;
 
   &--accent {
     color: $add-title-color;
     text-shadow: none;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 72px;
   }
 }

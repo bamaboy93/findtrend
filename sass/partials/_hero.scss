@@ -1,35 +1,52 @@
 .hero {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 60px;
+  padding-bottom: 43px;
   text-align: center;
+  @media screen and (min-width: $desktop) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 .hero__title {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   font-weight: 900;
-  font-size: 72px;
+  font-size: 36px;
   line-height: 1.12;
   text-shadow: $title-text-shadow;
-
   color: $title-text-color;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 24px;
+    font-size: 72px;
+  }
 }
 .hero__descr {
-  margin-bottom: 40px;
-  font-size: 18px;
+  margin-bottom: 32px;
+  font-size: 14px;
   line-height: 1.5;
-
   color: $secondary-text-color;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
 }
 .hero__link {
   display: inline-block;
-  margin-bottom: 95px;
-  padding: 12px 32px;
+  margin-bottom: 60px;
+  padding: 12px 24px;
   border-radius: 40px;
   background: $accent-color;
   color: inherit;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.4;
   transition: color 250ms $cubic-bezier;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 95px;
+    padding: 12px 32px;
+    font-size: 18px;
+  }
   &:hover,
   &:focus {
     color: $title-text-color;
@@ -37,43 +54,54 @@
     animation-duration: 2s;
   }
 }
-.hero__list {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 90px;
-  width: 1076px;
+.hero__wrapper {
+  @media screen and (min-width: $desktop) {
+    position: relative;
+    margin-bottom: 90px;
+  }
 }
+
 .hero__item:nth-child(1) {
-  left: 0;
   z-index: 12;
   transform: rotate(-4deg);
+  @media screen and (min-width: $desktop) {
+    left: 105px;
+  }
 }
 .hero__item:nth-child(2) {
-  top: 45px;
-  left: 185px;
   z-index: 11;
-
   transform: rotate(2deg);
+
+  @media screen and (min-width: $desktop) {
+    top: 45px;
+    left: 275px;
+  }
 }
 .hero__item:nth-child(3) {
-  left: 425px;
-  transform: rotate(-2deg);
   z-index: 10;
+  transform: rotate(-2deg);
+
+  @media screen and (min-width: $desktop) {
+    left: 485px;
+  }
 }
 .hero__item:nth-child(4) {
-  top: 40px;
-  left: 675px;
   transform: rotate(4deg);
+  @media screen and (min-width: $desktop) {
+    top: 40px;
+    left: 735px;
+  }
 }
 .hero__item {
-  position: absolute;
-  width: 300px;
   padding: 15px;
   background: #181818;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
-    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
-    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    width: 300px;
+  }
 }
 
 .block {

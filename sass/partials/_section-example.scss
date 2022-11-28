@@ -1,34 +1,72 @@
 .section-example__title {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   font-weight: 700;
-  font-size: 72px;
+  font-size: 36px;
   line-height: 1.2;
   text-shadow: $title-text-shadow;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 72px;
+  }
 }
 .section-example__wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .section-example__icon {
-  margin-bottom: 80px;
-  width: 95px;
-  height: 72px;
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: block;
+    margin-bottom: 80px;
+    width: 95px;
+    height: 72px;
+  }
+}
+.section-example__mobileIcon {
+  position: absolute;
+  width: 93px;
+  height: 64px;
+
+  &--top {
+    top: -40%;
+    left: 70%;
+  }
+  &--bot {
+    bottom: -40%;
+    right: 70%;
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }
 .section-example__box {
-  width: 502px;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 60px;
-  padding: 60px 80px;
+  width: 339px;
+  margin-bottom: 80px;
+  padding: 24px;
   background: $bg-color;
   border-radius: 16px;
   box-shadow: $main-box-shadow;
+  @media screen and (min-width: $desktop) {
+    width: 502px;
+    padding: 60px 80px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 60px;
+  }
 }
 
 .section-example__descr {
-  font-size: 18px;
+  padding: 0 26px;
+  font-size: 14px;
   line-height: 1.5;
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+  }
 }
 .section-example__block {
   position: relative;
@@ -54,7 +92,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 72px;
+  width: 56px;
   height: 62px;
   background: linear-gradient(
     270deg,

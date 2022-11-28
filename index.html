@@ -15,23 +15,73 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="shortcut icon" href="./pictures/favicon.ico" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <div class="wrapper">
       <!-- Header -->
       <header class="header">
-        <a href="#" class="header__logo">
-          <svg class="header__icon">
-            <use href="./pictures/sprite.svg#icon-logo"></use></svg
-          >Findtrend</a
-        >
+        <div class="header__mobile">
+          <a href="#" class="header__logo">
+            <svg class="header__icon">
+              <use href="./pictures/sprite.svg#icon-logo"></use></svg
+            >Findtrend</a
+          >
+          <!-- Mobile Menu -->
+          <button type="button" class="menu-button" data-menu-button>
+            <svg
+              class="menu-button__icon"
+              width="24"
+              height="24"
+              aria-label="Mobile menu switcher"
+              aria-controls="menu"
+            >
+              <use
+                class="icon-menu"
+                href="./pictures/sprite.svg#icon-menu"
+              ></use>
+              <use
+                class="icon-close"
+                href="./pictures/sprite.svg#icon-menu-cross"
+              ></use>
+            </svg>
+          </button>
+          <div class="menu" id="menu" data-menu>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">About</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">How it work</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Pricing</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Solution</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Features</a>
+              </li>
+            </ul>
+
+            <ul class="menu-user__list">
+              <li class="menu-user__item">
+                <a href="#" class="menu-user__link">Login</a>
+              </li>
+              <li class="menu-user__item">
+                <a href="#" class="menu-user__link--bordered">Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Desktop Header -->
         <nav class="header__nav">
           <ul class="site-nav">
             <li class="site-nav__item">
@@ -73,92 +123,95 @@
         <a href="#" class="hero__link animate__animated animate__heartBeat"
           >Get Started 🔥</a
         >
-        <ul class="hero__list">
-          <li class="hero__item">
-            <div class="block">
-              <img
-                src="./pictures/twitter.png"
-                alt="twitter"
-                width="32"
-                height="32"
-                class="block__image"
-              />
-              <p class="block__text">Cryptopunk - Search</p>
-              <div class="block__overlay">
-                <svg class="block__icon">
-                  <use
-                    href="./pictures/sprite.svg#icon-cross"
-                    width="15"
-                    heigth="15"
-                  ></use>
-                </svg>
+
+        <div class="hero__wrapper">
+          <ul class="hero__list">
+            <li class="hero__item">
+              <div class="block">
+                <img
+                  src="./pictures/twitter.png"
+                  alt="twitter"
+                  width="32"
+                  height="32"
+                  class="block__image"
+                />
+                <p class="block__text">Cryptopunk - Search</p>
+                <div class="block__overlay">
+                  <svg class="block__icon">
+                    <use
+                      href="./pictures/sprite.svg#icon-cross"
+                      width="15"
+                      heigth="15"
+                    ></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="hero__item">
-            <div class="block">
-              <img
-                src="./pictures/pinterest.png"
-                alt="twitter"
-                width="32"
-                height="32"
-                class="block__image"
-              />
-              <p class="block__text">Popular Design - Se</p>
-              <div class="block__overlay">
-                <svg class="block__icon">
-                  <use
-                    href="./pictures/sprite.svg#icon-cross"
-                    width="15"
-                    heigth="15"
-                  ></use>
-                </svg>
+            </li>
+            <li class="hero__item">
+              <div class="block">
+                <img
+                  src="./pictures/pinterest.png"
+                  alt="twitter"
+                  width="32"
+                  height="32"
+                  class="block__image"
+                />
+                <p class="block__text">Popular Design - Se</p>
+                <div class="block__overlay">
+                  <svg class="block__icon">
+                    <use
+                      href="./pictures/sprite.svg#icon-cross"
+                      width="15"
+                      heigth="15"
+                    ></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="hero__item">
-            <div class="block">
-              <img
-                src="./pictures/facebook.png"
-                alt="twitter"
-                width="32"
-                height="32"
-                class="block__image"
-              />
-              <p class="block__text">Product Design - Se</p>
-              <div class="block__overlay">
-                <svg class="block__icon">
-                  <use
-                    href="./pictures/sprite.svg#icon-cross"
-                    width="15"
-                    heigth="15"
-                  ></use>
-                </svg>
+            </li>
+            <li class="hero__item">
+              <div class="block">
+                <img
+                  src="./pictures/facebook.png"
+                  alt="twitter"
+                  width="32"
+                  height="32"
+                  class="block__image"
+                />
+                <p class="block__text">Product Design - Se</p>
+                <div class="block__overlay">
+                  <svg class="block__icon">
+                    <use
+                      href="./pictures/sprite.svg#icon-cross"
+                      width="15"
+                      heigth="15"
+                    ></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="hero__item">
-            <div class="block">
-              <img
-                src="./pictures/ball.png"
-                alt="twitter"
-                width="32"
-                height="32"
-                class="block__image"
-              />
-              <p class="block__text">Elon Musk - Search</p>
-              <div class="block__overlay">
-                <svg class="block__icon">
-                  <use
-                    href="./pictures/sprite.svg#icon-cross"
-                    width="15"
-                    heigth="15"
-                  ></use>
-                </svg>
+            </li>
+            <li class="hero__item">
+              <div class="block">
+                <img
+                  src="./pictures/ball.png"
+                  alt="twitter"
+                  width="32"
+                  height="32"
+                  class="block__image"
+                />
+                <p class="block__text">Elon Musk - Search</p>
+                <div class="block__overlay">
+                  <svg class="block__icon">
+                    <use
+                      href="./pictures/sprite.svg#icon-cross"
+                      width="15"
+                      heigth="15"
+                    ></use>
+                  </svg>
+                </div>
               </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </section>
     </div>
     <main>
@@ -175,6 +228,11 @@
           <div class="section-example__wrapper">
             <svg class="section-example__icon">
               <use href="./pictures/sprite.svg#icon-group1"></use>
+            </svg>
+            <svg
+              class="section-example__mobileIcon section-example__mobileIcon--top"
+            >
+              <use href="./pictures/sprite.svg#icon-mobileGroup1"></use>
             </svg>
             <div class="section-example__box">
               <div class="section-example__block">
@@ -197,6 +255,11 @@
                 </div>
               </div>
             </div>
+            <svg
+              class="section-example__mobileIcon section-example__mobileIcon--bot"
+            >
+              <use href="./pictures/sprite.svg#icon-mobileGroup2"></use>
+            </svg>
             <svg class="section-example__icon">
               <use href="./pictures/sprite.svg#icon-group2"></use>
             </svg>
@@ -251,8 +314,8 @@
               <img
                 src="./pictures/microsoft.png"
                 alt="microsoft logo"
-                width="190"
-                height="40"
+                width="115"
+                height="24"
               />
             </div>
           </li>
@@ -265,8 +328,8 @@
               <img
                 src="./pictures/allianz.png"
                 alt="allianz logo"
-                width="156"
-                height="40"
+                width="95"
+                height="24"
               />
             </div>
           </li>
@@ -279,8 +342,8 @@
               <img
                 src="./pictures/upwork.png"
                 alt="upwork logo"
-                width="146"
-                height="44"
+                width="88"
+                height="26"
               />
             </div>
           </li>
@@ -293,8 +356,8 @@
               <img
                 src="./pictures/volvo.png"
                 alt="volvo logo"
-                width="174"
-                height="24"
+                width="105"
+                height="14"
               />
             </div>
           </li>
@@ -307,8 +370,8 @@
               <img
                 src="./pictures/grab.png"
                 alt="grab logo"
-                width="112"
-                height="44"
+                width="68"
+                height="26"
               />
             </div>
           </li>
@@ -321,8 +384,8 @@
               <img
                 src="./pictures/verizon.png"
                 alt="verizon logo"
-                width="162"
-                height="36"
+                width="98"
+                height="21"
               />
             </div>
           </li>
@@ -335,8 +398,8 @@
               <img
                 src="./pictures/coinbase.png"
                 alt="coinbase logo"
-                width="148"
-                height="32"
+                width="90"
+                height="19"
               />
             </div>
           </li>
@@ -349,8 +412,8 @@
               <img
                 src="./pictures/expedia.png"
                 alt="expedia logo"
-                width="151"
-                height="44"
+                width="89"
+                height="26"
               />
             </div>
           </li>
@@ -363,8 +426,8 @@
               <img
                 src="./pictures/airtable.png"
                 alt="airtable logo"
-                width="182"
-                height="40"
+                width="110"
+                height="24"
               />
             </div>
           </li>
@@ -377,8 +440,8 @@
               <img
                 src="./pictures/magento.png"
                 alt="magento logo"
-                width="164"
-                height="48"
+                width="100"
+                height="29"
               />
             </div>
           </li>
@@ -391,8 +454,8 @@
               <img
                 src="./pictures/carrera.png"
                 alt="carrera logo"
-                width="174"
-                height="42"
+                width="106"
+                height="25"
               />
             </div>
           </li>
@@ -405,8 +468,8 @@
               <img
                 src="./pictures/bonanza.png"
                 alt="bonanza logo"
-                width="162"
-                height="28"
+                width="97"
+                height="17"
               />
             </div>
           </li>
@@ -419,8 +482,8 @@
               <img
                 src="./pictures/wetrtansfer.png"
                 alt="wetransfer logo"
-                width="176"
-                height="38"
+                width="107"
+                height="23"
               />
             </div>
           </li>
@@ -433,8 +496,8 @@
               <img
                 src="./pictures/suzuki.png"
                 alt="suzuki logo"
-                width="178"
-                height="34"
+                width="108"
+                height="20"
               />
             </div>
           </li>
@@ -447,8 +510,8 @@
               <img
                 src="./pictures/algolia.png"
                 alt="algolia logo"
-                width="162"
-                height="40"
+                width="98"
+                height="24"
               />
             </div>
           </li>
@@ -461,8 +524,8 @@
               <img
                 src="./pictures/heineken.png"
                 alt="heineken logo"
-                width="190"
-                height="34"
+                width="115"
+                height="20"
               />
             </div>
           </li>
@@ -607,43 +670,38 @@
           </ul>
           <ul class="images-list">
             <li class="images-list__item">
-              <img
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"
-                class="section-platforms__image"
-                src="./pictures/tweet1.jpg"
-                alt="Elon Musk tweet"
-                width="800"
-                height="274"
-              />
+              <picture>
+                <source
+                  srcset="./pictures/tweet1Desktop.jpg"
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  src="./pictures/tweet1.jpg"
+                  alt="tweet"
+                />
+              </picture>
             </li>
             <li class="images-list__item">
-              <img
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"
-                class="section-platforms__image"
-                src="./pictures/tweet2.jpg"
-                alt="Sawyer Merritt tweet"
-                width="800"
-                height="804"
-              />
-            </li>
-            <li class="images-list__item">
-              <img
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"
-                class="section-platforms__image"
-                src="./pictures/tweet1.jpg"
-                alt="Elon Musk tweet"
-                width="800"
-                height="274"
-              />
+              <picture>
+                <source
+                  srcset="./pictures/tweet2Desktop.jpg"
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  src="./pictures/tweet2.jpg"
+                  alt="tweet"
+                />
+              </picture>
             </li>
           </ul>
           <a href="#" class="section__link">View More Trend</a>
@@ -651,7 +709,7 @@
       </div>
       <!-- Section Deals -->
       <div class="bg-black">
-        <section class="section section--black container">
+        <section class="section container">
           <h2
             data-aos="fade-right"
             data-aos-duration="1000"
@@ -845,7 +903,7 @@
       </div>
       <!-- Section Join Us -->
       <div class="bg-green">
-        <section class="section">
+        <section class="section container">
           <h2
             data-aos="fade-right"
             data-aos-duration="1000"
@@ -862,7 +920,7 @@
       </div>
     </main>
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer section">
       <a href="#" class="footer__logo"
         ><svg class="footer__icon">
           <use href="./pictures/sprite.svg#icon-logo-black"></use></svg
@@ -885,6 +943,7 @@
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/menu.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/aos.js"></script>
   </body>

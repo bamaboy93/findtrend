@@ -1,23 +1,48 @@
 .section-deals__title {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 36px;
   line-height: 1.2;
   color: $title-text-color;
   text-shadow: $title-text-shadow;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 40px;
+    font-size: 64px;
+  }
 }
 // Slider
 .slider {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
-  margin-left: 90px;
+  margin-bottom: 80px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 40px;
+    margin-left: 90px;
+  }
+}
+.slider::after {
+  @media screen and (max-width: $desktop) {
+    position: absolute;
+    top: 90%;
+    left: 62%;
+    content: "";
+    width: 66px;
+    height: 63px;
+
+    background-image: url(../../pictures/group3.png);
+  }
 }
 .slider__text {
-  font-size: 24px;
+  font-size: 16px;
   line-height: 1.2;
   color: $title-text-color;
+  @media screen and (min-width: $desktop) {
+    font-size: 24px;
+  }
 }
 .slider__text--yearly {
   color: $secondary-text-color;
@@ -27,8 +52,12 @@
   display: inline-block;
   margin-left: 24px;
   margin-right: 24px;
-  width: 80px;
-  height: 34px;
+  width: 70px;
+  height: 24px;
+  @media screen and (min-width: $desktop) {
+    height: 34px;
+    width: 80px;
+  }
 }
 .slider__input {
   display: none;
@@ -49,14 +78,18 @@
 .slider__switcher:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  height: 16px;
+  width: 16px;
   left: 4px;
   bottom: 4px;
   border-radius: 50%;
   background-color: $accent-color;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  @media screen and (min-width: $desktop) {
+    height: 26px;
+    width: 26px;
+  }
 }
 .slider__input {
   &:checked {
@@ -78,21 +111,31 @@
   }
 }
 .slider__icon {
-  margin-left: 24px;
-  width: 88px;
-  height: 66px;
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: block;
+    margin-left: 24px;
+    width: 88px;
+    height: 66px;
+  }
 }
 //
 .deals {
-  display: flex;
-  justify-content: center;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+  }
 }
 .deals__item:not(:last-child) {
-  margin-right: 20px;
+  margin-bottom: 24px;
+  @media screen and (min-width: $desktop) {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
 }
 .deals__box {
   padding: 16px;
-  min-width: 360px;
+  min-width: 339px;
   height: 640px;
   text-align: center;
   background-color: $forth-bg-color;
@@ -108,7 +151,11 @@
       background: $third-bg-color;
     }
   }
+  @media screen and (min-width: $desktop) {
+    min-width: 360px;
+  }
 }
+
 .deals__firstbox {
   padding: 16px;
   margin-bottom: 16px;
@@ -121,8 +168,11 @@
 }
 .deals__title {
   margin-bottom: 8px;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 1;
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+  }
 }
 
 .deals__descr {
@@ -134,7 +184,10 @@
   font-size: 18px;
   line-height: 1;
   &--bold {
-    font-size: 64px;
+    font-size: 60px;
+    @media screen and (min-width: $desktop) {
+      font-size: 64px;
+    }
   }
 }
 

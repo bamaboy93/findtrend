@@ -1,27 +1,36 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-left: 18px;
+  margin-right: 18px;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  padding: 40px 0;
-  margin-left: 80px;
-  margin-right: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
   &__icon {
     width: 40px;
     height: 40px;
     margin-right: 10px;
+    z-index: 3;
   }
   &__logo {
     display: inline-flex;
     align-items: center;
-    margin-right: auto;
+    padding: 24px 0;
     font-family: $logo-font-family;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 1;
     text-align: center;
     color: $title-text-color;
     text-shadow: $logo-text-shadow;
+    @media screen and (min-width: $desktop) {
+      padding: 0;
+      font-size: 24px;
+    }
     &:hover,
     &:focus {
       animation: tada;
@@ -29,14 +38,24 @@
     }
   }
 }
-.header__nav {
+.header__mobile {
   display: flex;
   align-items: center;
-  margin-left: 80px;
+  justify-content: space-between;
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
+}
+.header__nav {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+  }
 }
 .site-nav {
   display: flex;
-  margin-left: auto;
 }
 .site-nav__item:not(:last-child),
 .user__item:not(:last-child) {
@@ -44,6 +63,7 @@
 }
 .site-nav__link,
 .user__link {
+  padding: 40px 0;
   font-size: 18px;
   line-height: 1;
   color: $title-text-color;
@@ -56,9 +76,11 @@
   }
 }
 .user {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .user__link--bordered {

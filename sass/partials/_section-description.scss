@@ -1,16 +1,14 @@
-.section-description {
-  padding-top: 140px;
-  padding-bottom: 140px;
-  text-align: center;
-}
-
 .section-description__descr {
   font-weight: 700;
-  font-size: 64px;
+  font-size: 36px;
   line-height: 1.2;
   text-shadow: $title-text-shadow;
   &--accent {
     color: $secondary-title-color;
     text-shadow: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 64px;
   }
 }
