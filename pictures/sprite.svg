@@ -39,10 +39,10 @@
 </symbol>
 <symbol id="icon-menu-cross" viewBox="0 0 32 32">
 <path d="M6.571 8.458l16.971 16.971 1.886-1.886-16.971-16.971-1.886 1.886z"></path>
-<path d="M8.457 25.428l16.971-16.971-1.886-1.886-16.971 16.971 1.886 1.886z"></path>
+<path  d="M8.457 25.428l16.971-16.971-1.886-1.886-16.971 16.971 1.886 1.886z"></path>
 </symbol>
 <symbol id="icon-menu" viewBox="0 0 32 32">
-<path  d="M4 22.667h24v-2.667h-24v2.667z"></path>
+<path d="M4 22.667h24v-2.667h-24v2.667z"></path>
 <path d="M4 12h24v-2.667h-24v2.667z"></path>
 </symbol>
 </defs>

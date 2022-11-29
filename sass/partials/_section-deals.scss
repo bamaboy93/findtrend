@@ -146,10 +146,6 @@
   &:hover {
     background: $accent-color;
     box-shadow: $main-box-shadow;
-    & .deals__button {
-      color: $title-text-color;
-      background: $third-bg-color;
-    }
   }
   @media screen and (min-width: $desktop) {
     min-width: 360px;
@@ -224,5 +220,9 @@
   }
   &--third {
     margin-top: 40px;
+  }
+  .deals__box:hover & {
+    color: $title-text-color;
+    background: $third-bg-color;
   }
 }
